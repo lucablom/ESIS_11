@@ -1,6 +1,6 @@
 # Notes for Claude
 
-- Unity 6, 2D. The game text is English; talk to Luca (repo owner) in Swedish.
+- Unity 6 (6000.3.2f1), 2D URP. The game text is English; talk to Luca (repo owner) in Swedish.
 - Claude cannot run the Unity editor. Write scripts and editor tools; Luca wires up scenes, prefabs and UI and tests in Play mode.
 - Keep game logic in plain C# classes under `Assets/Scripts/Systems` and `State`; UI only reads state and calls systems.
 - Content lives in ScriptableObjects (`Assets/Scripts/Data`). Saved state stores ids, never Unity object references.
