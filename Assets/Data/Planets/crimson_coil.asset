@@ -1,0 +1,162 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa8ecfe70bbbb1b49a057d6f00dd1076, type: 3}
+  m_Name: crimson_coil
+  m_EditorClassIdentifier: Assembly-CSharp::VastSpace.Data.PlanetDefinition
+  id: crimson_coil
+  displayName: Crimson Coil
+  description: An asteroid cluster packed with heavy metals.
+  icon: {fileID: 0}
+  mapPosition: {x: 380, y: 30}
+  exploreCost:
+    currencies:
+    - currency: 0
+      amount: 44999.998807907104
+    materials:
+    - material: {fileID: 11400000, guid: 24a06422302239045ac35dd19bab5928, type: 2}
+      amount: 1
+  exploreDurationSeconds: 110
+  resources:
+  - material: {fileID: 11400000, guid: d9e2e4b3daa7c9c46918dab312536e6d, type: 2}
+    weight: 2
+  - material: {fileID: 11400000, guid: 798d08738ae9bec46b8b4883df0b9c8e, type: 2}
+    weight: 2
+  - material: {fileID: 11400000, guid: 3a4e863801a9f3240956e559fa2c01f9, type: 2}
+    weight: 1
+  travelDistance: 950
+  upgrades:
+  - type: 0
+    levels:
+    - value: 30
+      cost:
+        currencies: []
+        materials: []
+    - value: 45
+      cost:
+        currencies:
+        - currency: 0
+          amount: 44999.998807907104
+        materials: []
+    - value: 65
+      cost:
+        currencies:
+        - currency: 0
+          amount: 107999.99713897705
+        materials: []
+    - value: 90
+      cost:
+        currencies:
+        - currency: 0
+          amount: 251999.99332427979
+        materials: []
+    - value: 125
+      cost:
+        currencies:
+        - currency: 0
+          amount: 575999.9847412109
+        materials: []
+    - value: 170
+      cost:
+        currencies:
+        - currency: 0
+          amount: 1259999.966621399
+        materials: []
+  - type: 1
+    levels:
+    - value: 2000
+      cost:
+        currencies: []
+        materials: []
+    - value: 4000
+      cost:
+        currencies:
+        - currency: 0
+          amount: 35999.99904632568
+        materials: []
+    - value: 8000
+      cost:
+        currencies:
+        - currency: 0
+          amount: 89999.99761581421
+        materials: []
+    - value: 16000
+      cost:
+        currencies:
+        - currency: 0
+          amount: 215999.9942779541
+        materials: []
+    - value: 32000
+      cost:
+        currencies:
+        - currency: 0
+          amount: 539999.9856948853
+        materials: []
+  - type: 2
+    levels:
+    - value: 500
+      cost:
+        currencies: []
+        materials: []
+    - value: 1000
+      cost:
+        currencies:
+        - currency: 0
+          amount: 53999.998569488525
+        materials: []
+    - value: 2000
+      cost:
+        currencies:
+        - currency: 0
+          amount: 134999.9964237213
+        materials: []
+    - value: 4000
+      cost:
+        currencies:
+        - currency: 0
+          amount: 323999.99141693115
+        materials: []
+    - value: 8000
+      cost:
+        currencies:
+        - currency: 0
+          amount: 755999.9799728394
+        materials: []
+  - type: 3
+    levels:
+    - value: 5
+      cost:
+        currencies: []
+        materials: []
+    - value: 7
+      cost:
+        currencies:
+        - currency: 0
+          amount: 44999.998807907104
+        materials: []
+    - value: 10
+      cost:
+        currencies:
+        - currency: 0
+          amount: 107999.99713897705
+        materials: []
+    - value: 14
+      cost:
+        currencies:
+        - currency: 0
+          amount: 269999.9928474426
+        materials: []
+    - value: 20
+      cost:
+        currencies:
+        - currency: 0
+          amount: 629999.9833106995
+        materials: []

@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b5306341796e5e42b50a5e2a352a7f4, type: 3}
+  m_Name: veltrix_expanse
+  m_EditorClassIdentifier: Assembly-CSharp::VastSpace.Data.GalaxyDefinition
+  id: veltrix_expanse
+  displayName: Veltrix Expanse
+  description: A cold, mystic galaxy where icy worlds hide veins of iron, copper,
+    and nickel, and drifting pockets of coal, magnesium, sulfur, and nitrogen wait
+    to be harvested. Ancient secrets linger in its frozen landscapes, inviting daring
+    explorers.
+  icon: {fileID: 0}
+  mapPosition: {x: -330, y: 30}
+  unlockCost:
+    currencies:
+    - currency: 0
+      amount: 600000
+    materials: []
+  unlockDurationSeconds: 0
+  planets:
+  - {fileID: 11400000, guid: 67d51ce62202db34887a983e7a457895, type: 2}
+  - {fileID: 11400000, guid: 5db7d716e75a6544c8b12847006490c9, type: 2}
+  - {fileID: 11400000, guid: e46d177ad2d7f94468b215c647bcc6fa, type: 2}
+  - {fileID: 11400000, guid: 32ab84a666104c7468e7cfe3e86443e7, type: 2}
+  - {fileID: 11400000, guid: 92b89a3c9a933b74b858dd453b98e756, type: 2}
+  - {fileID: 11400000, guid: 96f928f5306f6ef47b47189cac5cd472, type: 2}
+  - {fileID: 11400000, guid: 6205d0726045159489f3691309f7c708, type: 2}
+  - {fileID: 11400000, guid: 0924be5c516bf8c42b6f1a688a08c104, type: 2}

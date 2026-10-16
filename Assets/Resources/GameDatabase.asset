@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ca6b3752bd756243a764f04c0d0e266, type: 3}
+  m_Name: GameDatabase
+  m_EditorClassIdentifier: Assembly-CSharp::VastSpace.Data.GameDatabase
+  materials:
+  - {fileID: 11400000, guid: d9e2e4b3daa7c9c46918dab312536e6d, type: 2}
+  - {fileID: 11400000, guid: f41a59d002f1acd44ab356869d26d303, type: 2}
+  - {fileID: 11400000, guid: daf9c8cfe1b40a649ade23b059070b2b, type: 2}
+  - {fileID: 11400000, guid: 3a4e863801a9f3240956e559fa2c01f9, type: 2}
+  - {fileID: 11400000, guid: 798d08738ae9bec46b8b4883df0b9c8e, type: 2}
+  - {fileID: 11400000, guid: 12d885a7bd7b1bd459a32d150bce849b, type: 2}
+  - {fileID: 11400000, guid: be1106c1527432944b1c1b375d346a90, type: 2}
+  - {fileID: 11400000, guid: 4a101e2d50ad0434084a974c522d3b24, type: 2}
+  - {fileID: 11400000, guid: 3ec71beb2aac25241b49482608fa4fdb, type: 2}
+  - {fileID: 11400000, guid: f2a9c0ce258c75b4a955284af9580afd, type: 2}
+  - {fileID: 11400000, guid: 0d572bd9f7e9577428c0fe2a61b1a2ca, type: 2}
+  - {fileID: 11400000, guid: 648389ea55863fb44af3b4ec45ec7271, type: 2}
+  - {fileID: 11400000, guid: 71e446c765450804697c593fc56cf8ac, type: 2}
+  - {fileID: 11400000, guid: a7456a3f4903af44bbf95ff9f2026c35, type: 2}
+  - {fileID: 11400000, guid: 746cec99b7ab94d44b083b5a7afe21e8, type: 2}
+  - {fileID: 11400000, guid: 319fb5bc13fecdb47a3d74eeabde43a0, type: 2}
+  - {fileID: 11400000, guid: e2da31be063427e4c9cd41edaecba456, type: 2}
+  - {fileID: 11400000, guid: 9c901be8e15c6ed498871fa6b19c2c08, type: 2}
+  - {fileID: 11400000, guid: 24a06422302239045ac35dd19bab5928, type: 2}
+  recipes:
+  - {fileID: 11400000, guid: 9a5f69d8dcfeaa24583d55bd1c90e787, type: 2}
+  - {fileID: 11400000, guid: 805429f4d927a3b4a8642520bdc79fdc, type: 2}
+  - {fileID: 11400000, guid: 6c3aead0e0a963242af16c2917b60417, type: 2}
+  - {fileID: 11400000, guid: 7ea53ade89ebab04ca6e05702ca2002b, type: 2}
+  - {fileID: 11400000, guid: 9b9816a4ebf0415489bd832e72b7f4aa, type: 2}
+  - {fileID: 11400000, guid: 1fcd91eabbcaf3e48afdc175a00d3ad8, type: 2}
+  - {fileID: 11400000, guid: 2716df544bbdc414d84b51bb7ed01361, type: 2}
+  - {fileID: 11400000, guid: cbdc5e5e9bf70dc4cbdca3da60f50a20, type: 2}
+  - {fileID: 11400000, guid: bd35081b0e565754589845828a3f6ace, type: 2}
+  galaxies:
+  - {fileID: 11400000, guid: 3100d41689a644e468cc3e25cbd5711b, type: 2}
+  - {fileID: 11400000, guid: c4e059e85b7dff04e9bc4a3982562159, type: 2}
+  - {fileID: 11400000, guid: ae41f9939dcec214caaf3bd2cc528ade, type: 2}
+  - {fileID: 11400000, guid: dafb8cebc084fa3498e3e8af1437df4c, type: 2}
+  - {fileID: 11400000, guid: cdeb2ad8ab2255f43afac03b9f661ca3, type: 2}
+  - {fileID: 11400000, guid: a259277e51a840042a725d18610ded5c, type: 2}
+  - {fileID: 11400000, guid: 351759af471f31448be7ee2a2d8496b9, type: 2}
+  - {fileID: 11400000, guid: 056698564704d6c499f7424b5fbad193, type: 2}
+  - {fileID: 11400000, guid: 813f9fa2b3ec1a842a093eb73ff7bf97, type: 2}
+  - {fileID: 11400000, guid: 2bf3b402b42de5a479806a352502b55b, type: 2}
+  startingCurrencies:
+  - currency: 0
+    amount: 650000
+  startingMaterials:
+  - material: {fileID: 11400000, guid: 24a06422302239045ac35dd19bab5928, type: 2}
+    amount: 1
+  startYear: 2083
+  secondsPerGameDay: 60
