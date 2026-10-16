@@ -20,10 +20,10 @@ Spelet räknar även tiden när det är stängt (offline-progress, max 24 h som 
 
 ## Kom igång
 
-1. Öppna projektet i Unity 6.
-2. Menyn **Vast Space → Create Sample Data** skapar alla material, recept, galaxer och planeter under `Assets/Data`.
-3. Öppna en scen och kör **Vast Space → Add Game Manager To Scene**.
-4. Tryck Play. Dev-panelen (uppe till vänster) låter dig testa allt innan det riktiga UI:t finns, med knappar för extra SC, snabbare tid, spara och återställ.
+1. Öppna projektet i Unity 6. Första gången skapas exempeldatan automatiskt: material, recept, galaxer och planeter under `Assets/Data`, och `GameDatabase` under `Assets/Resources`.
+2. Tryck Play i valfri scen. En GameManager skapas automatiskt, och dev-panelen syns uppe till vänster i **Game**-fönstret.
+
+Vill du återskapa datan: **Vast Space → Create Sample Data**. Vill du ha GameManager synligt i scenen: **Vast Space → Add Game Manager To Scene**.
 
 Siffrorna är platshållare. Balansera spelet genom att ändra asseten i Inspector.
 

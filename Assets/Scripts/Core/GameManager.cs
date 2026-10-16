@@ -49,6 +49,9 @@ namespace VastSpace.Core
 
         private float _autosaveTimer;
 
+        /// <summary>Used by <see cref="GameBootstrap"/>. Must be called before Awake.</summary>
+        internal void SetDatabase(GameDatabase db) => database = db;
+
         // Supports "Enter Play Mode" without domain reload.
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
         private static void ResetStatics()

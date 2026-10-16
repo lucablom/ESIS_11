@@ -17,18 +17,24 @@ namespace VastSpace.EditorTools
     public static class SampleDataCreator
     {
         private const string Root = "Assets/Data";
-        private const string DatabasePath = Root + "/GameDatabase.asset";
+        // In a Resources folder so GameBootstrap can load it at runtime.
+        public const string DatabasePath = "Assets/Resources/" + GameBootstrap.DatabaseResourceName + ".asset";
+
+        public static bool DatabaseExists => AssetDatabase.LoadAssetAtPath<GameDatabase>(DatabasePath) != null;
 
         [MenuItem("Vast Space/Create Sample Data")]
-        public static void CreateSampleData()
+        public static void CreateSampleDataMenu() => CreateSampleData(askBeforeOverwrite: true);
+
+        public static void CreateSampleData(bool askBeforeOverwrite)
         {
-            if (AssetDatabase.LoadAssetAtPath<GameDatabase>(DatabasePath) != null &&
+            if (askBeforeOverwrite && DatabaseExists &&
                 !EditorUtility.DisplayDialog("Vast Space",
                     "Sample data already exists. Overwrite the values in Assets/Data with the defaults?\n" +
                     "(Sprites you assigned are kept.)", "Overwrite", "Cancel"))
                 return;
 
             EnsureFolder(Root);
+            EnsureFolder("Assets/Resources");
             EnsureFolder(Root + "/Materials");
             EnsureFolder(Root + "/Recipes");
             EnsureFolder(Root + "/Galaxies");
