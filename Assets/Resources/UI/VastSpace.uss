@@ -1,0 +1,321 @@
+/* Vast Space UI styles. Colours follow the mockups: dark space blue with teal panels. */
+
+:root {
+    --bg: #040b16;
+    --bar: rgba(5, 28, 42, 0.96);
+    --panel: rgba(8, 36, 52, 0.95);
+    --panel-inner: rgba(4, 22, 34, 0.75);
+    --border: #1b8ba0;
+    --accent: #3fd8ee;
+    --text: #e4f6fb;
+    --muted: #84a7b4;
+    --good: #4be37f;
+    --bad: #ff6b6b;
+    --warn: #ffbe55;
+}
+
+/* ------------------------------------------------------------ Layout */
+
+.vs-root {
+    flex-grow: 1;
+    background-color: var(--bg);
+    color: var(--text);
+    font-size: 20px;
+}
+
+.vs-root .unity-label,
+.vs-root .unity-toggle__label,
+.vs-root .unity-button { color: var(--text); }
+
+.vs-main {
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.row { flex-direction: row; align-items: center; }
+.col { flex-direction: column; }
+.grow { flex-grow: 1; }
+.wrap { flex-wrap: wrap; }
+.center { align-items: center; justify-content: center; }
+.mt { margin-top: 12px; }
+.mt-lg { margin-top: 28px; }
+.mr { margin-right: 12px; }
+.ml { margin-left: 12px; }
+
+/* ------------------------------------------------------------ Text */
+
+.h1 { font-size: 44px; -unity-font-style: bold; }
+.h2 { font-size: 30px; -unity-font-style: bold; }
+.vs-root .h3 { font-size: 22px; -unity-font-style: bold; color: var(--accent); letter-spacing: 2px; margin-bottom: 8px; }
+.small { font-size: 16px; }
+.vs-root .muted { color: var(--muted); }
+.vs-root .good { color: var(--good); }
+.vs-root .bad { color: var(--bad); }
+.vs-root .warn { color: var(--warn); }
+.vs-root .accent { color: var(--accent); }
+.bold { -unity-font-style: bold; }
+.right { -unity-text-align: middle-right; }
+.paragraph { white-space: normal; font-size: 20px; }
+
+/* ------------------------------------------------------------ Top & bottom bars */
+
+.vs-topbar {
+    height: 64px;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: var(--bar);
+    border-bottom-width: 2px;
+    border-bottom-color: var(--border);
+}
+
+.vs-bottombar {
+    height: 62px;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 12px;
+    padding-right: 20px;
+    background-color: var(--bar);
+    border-top-width: 2px;
+    border-top-color: var(--border);
+}
+
+.currency { flex-direction: row; align-items: center; margin-right: 44px; }
+.currency-label { font-size: 22px; -unity-font-style: bold; }
+
+.vs-root .currency-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    border-radius: 16px;
+    border-width: 2px;
+    font-size: 11px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    color: #10202a;
+}
+.currency-icon--sc { background-color: #b9c4cc; border-color: #6f7c86; }
+.currency-icon--ssc { background-color: #9fe6ff; border-color: #3fb5d8; border-radius: 6px; rotate: 45deg; }
+.vs-root .currency-icon--st { background-color: #6b62e8; border-color: #b2adff; border-radius: 4px; color: white; }
+
+.vs-title { flex-grow: 1; -unity-text-align: middle-center; font-size: 30px; letter-spacing: 2px; }
+.vs-clock { font-size: 30px; -unity-font-style: bold; min-width: 160px; -unity-text-align: middle-right; }
+.vs-date { font-size: 24px; -unity-font-style: bold; margin-left: 16px; }
+
+/* ------------------------------------------------------------ Buttons */
+
+.btn {
+    background-color: rgba(10, 58, 78, 0.95);
+    border-color: var(--accent);
+    border-width: 2px;
+    border-radius: 4px;
+    color: var(--text);
+    padding: 6px 18px;
+    margin: 0 6px;
+    font-size: 18px;
+    -unity-font-style: bold;
+    transition-duration: 0.12s;
+}
+.btn:hover { background-color: rgba(28, 112, 138, 0.98); border-color: white; }
+.vs-root .btn:active { background-color: rgba(63, 216, 238, 0.9); color: #04121e; }
+.btn:disabled { opacity: 0.35; }
+
+.btn--small { font-size: 15px; padding: 3px 10px; margin: 0 3px; }
+.btn--big { font-size: 22px; padding: 10px 30px; }
+.btn--good { border-color: var(--good); }
+.btn--ghost { background-color: rgba(0, 0, 0, 0); border-width: 0; }
+
+.nav-btn { font-size: 21px; padding: 6px 16px; margin: 0 4px; }
+.vs-root .nav-btn--active { background-color: rgba(63, 216, 238, 0.85); color: #04121e; }
+
+.vs-root .close-btn {
+    width: 46px;
+    height: 46px;
+    font-size: 26px;
+    padding: 0;
+    -unity-text-align: middle-center;
+    color: var(--accent);
+    border-color: var(--accent);
+}
+
+.tab-btn { font-size: 16px; padding: 4px 14px; }
+.vs-root .tab-btn--active { background-color: rgba(63, 216, 238, 0.85); color: #04121e; }
+
+/* ------------------------------------------------------------ Panels */
+
+.panel {
+    background-color: var(--panel);
+    border-color: var(--border);
+    border-width: 2px;
+    border-radius: 6px;
+    padding: 24px;
+}
+
+.panel-inner {
+    background-color: var(--panel-inner);
+    border-color: rgba(27, 139, 160, 0.5);
+    border-width: 1px;
+    border-radius: 4px;
+    padding: 18px;
+}
+
+.screen {
+    position: absolute;
+    left: 24px;
+    right: 24px;
+    top: 20px;
+    bottom: 20px;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal { width: 820px; }
+
+.stat-row { flex-direction: row; align-items: center; margin-bottom: 6px; }
+.stat-name { width: 290px; color: var(--muted); }
+.stat-value { -unity-font-style: bold; }
+
+.divider { height: 1px; background-color: rgba(63, 216, 238, 0.35); margin: 10px 0; }
+
+.pill {
+    padding: 3px 12px;
+    border-radius: 12px;
+    border-width: 1px;
+    font-size: 15px;
+    -unity-font-style: bold;
+}
+.vs-root .pill--good { border-color: var(--good); color: var(--good); }
+.vs-root .pill--warn { border-color: var(--warn); color: var(--warn); }
+.vs-root .pill--muted { border-color: var(--muted); color: var(--muted); }
+
+/* ------------------------------------------------------------ Progress bars */
+
+.bar {
+    height: 14px;
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 7px;
+    border-width: 1px;
+    border-color: rgba(63, 216, 238, 0.35);
+    overflow: hidden;
+}
+.bar-fill { height: 100%; width: 0; background-color: var(--accent); border-radius: 6px; }
+.bar--full .bar-fill { background-color: var(--warn); }
+.bar--good .bar-fill { background-color: var(--good); }
+
+/* ------------------------------------------------------------ Maps */
+
+.map { flex-grow: 1; }
+.map-lines { position: absolute; left: 0; top: 0; right: 0; bottom: 0; }
+
+.node {
+    position: absolute;
+    align-items: center;
+    translate: -50% -50%;
+}
+.node-body {
+    width: 96px;
+    height: 96px;
+    border-radius: 48px;
+    border-width: 3px;
+    border-color: rgba(255, 255, 255, 0.25);
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.15s;
+}
+.node-core { width: 44px; height: 44px; border-radius: 22px; opacity: 0.9; }
+.node:hover .node-body { border-color: white; scale: 1.08 1.08; }
+.node-label {
+    margin-top: 8px;
+    font-size: 19px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    text-shadow: 1px 1px 3px rgb(0, 0, 0);
+}
+.vs-root .node-status { font-size: 15px; -unity-text-align: middle-center; color: var(--muted); }
+.node--locked .node-body { opacity: 0.4; }
+.vs-root .node--locked .node-label { color: var(--muted); }
+.node--station .node-body {
+    width: 120px;
+    height: 120px;
+    border-radius: 16px;
+    rotate: 45deg;
+    border-color: var(--accent);
+    background-color: rgba(30, 60, 80, 0.95);
+}
+.node--station .node-core { rotate: -45deg; width: 52px; height: 52px; border-radius: 26px; background-color: #c9433a; border-width: 4px; border-color: #e8e8e8; }
+.node--deco .node-body { width: 64px; height: 64px; border-radius: 32px; }
+.node--small .node-body { width: 34px; height: 34px; border-radius: 17px; }
+.node--deco .node-core { width: 26px; height: 26px; border-radius: 13px; background-color: #4caf50; }
+.node--small .node-core { width: 12px; height: 12px; border-radius: 6px; background-color: #d0d0d4; }
+.vs-root .node--deco .node-label { font-size: 16px; color: var(--muted); }
+
+.map-back { position: absolute; left: 30px; top: 24px; }
+.vs-root .map-hint { position: absolute; right: 30px; top: 24px; color: var(--muted); font-size: 18px; }
+
+/* ------------------------------------------------------------ Lists */
+
+.list-row {
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 10px;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(63, 216, 238, 0.15);
+}
+.list-row:hover { background-color: rgba(63, 216, 238, 0.06); }
+.vs-root .list-header { color: var(--muted); font-size: 16px; -unity-font-style: bold; }
+
+.mat-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.35);
+    margin-right: 14px;
+}
+.mat-icon--small { width: 24px; height: 24px; margin-right: 8px; border-radius: 4px; }
+
+.inv-cell { width: 48%; flex-direction: row; align-items: center; padding: 10px 6px; margin-right: 2%; }
+.inv-name { width: 260px; font-size: 22px; }
+.inv-amount { font-size: 22px; -unity-font-style: bold; }
+.zero { opacity: 0.4; }
+
+.card {
+    background-color: var(--panel-inner);
+    border-color: rgba(27, 139, 160, 0.5);
+    border-width: 1px;
+    border-radius: 4px;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+}
+
+.upgrade-row { flex-direction: row; align-items: center; padding: 10px 0; border-bottom-width: 1px; border-bottom-color: rgba(63, 216, 238, 0.15); }
+
+/* ------------------------------------------------------------ Toast & dev */
+
+.toast {
+    position: absolute;
+    bottom: 76px;
+    left: 50%;
+    translate: -50% 0;
+    padding: 10px 22px;
+    background-color: rgba(4, 20, 30, 0.95);
+    border-color: var(--border);
+    border-width: 1px;
+    border-radius: 4px;
+    font-size: 19px;
+}
+.vs-root .toast--error { border-color: var(--bad); color: var(--bad); }
+
+.dev-panel { position: absolute; right: 16px; bottom: 76px; width: 340px; }
+.vs-root .build-label { color: var(--muted); font-size: 14px; margin-left: 10px; }

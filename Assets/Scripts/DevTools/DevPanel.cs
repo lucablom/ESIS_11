@@ -56,6 +56,8 @@ namespace VastSpace.DevTools
         {
             var gm = GameManager.Instance;
             if (gm == null || gm.State == null) return;
+            // The real UI has its own DEV menu; this panel is only a fallback without it.
+            if (UI.GameUI.Instance != null) return;
 
             GUI.matrix = Matrix4x4.Scale(new Vector3(uiScale, uiScale, 1f));
             float width = Screen.width / uiScale;

@@ -21,7 +21,8 @@ Spelet räknar även tiden när det är stängt (offline-progress, max 24 h som 
 ## Kom igång
 
 1. Öppna projektet i Unity 6. Första gången skapas exempeldatan automatiskt: material, recept, galaxer och planeter under `Assets/Data`, och `GameDatabase` under `Assets/Resources`.
-2. Tryck Play i valfri scen. En GameManager skapas automatiskt, och dev-panelen syns uppe till vänster i **Game**-fönstret.
+2. Tryck Play i valfri scen. GameManager och spelets UI skapas automatiskt och visas i **Game**-fönstret.
+3. Knappen **DEV** nere till höger har fusk för testning: mer SC, snabbare tid, spara och återställ.
 
 Vill du återskapa datan: **Vast Space → Create Sample Data**. Vill du ha GameManager synligt i scenen: **Vast Space → Add Game Manager To Scene**.
 
@@ -36,7 +37,8 @@ Siffrorna är platshållare. Balansera spelet genom att ändra asseten i Inspect
 | `Systems/` | Spellogik: `PlanetSystem` (galaxer, utforskning, uppgraderingar, utvinning), `ShippingSystem`, `StationSystem` (sälj + smältning) |
 | `Core/` | `GameManager` (startpunkt, tick, autosave, offline-tid), `SaveSystem` (JSON), `Economy` (kostnader), `GameEvents` |
 | `Util/` | `NumberFormat`: formatering av tal och tider för HUD:en |
-| `DevTools/` | `DevPanel`: tillfällig testpanel |
+| `UI/` | Hela UI:t byggt i kod med UI Toolkit: `GameUI` (ram, toppbar, navigering), kartor, planetvy, inventory, market, crafting. Stilar i `Assets/Resources/UI/VastSpace.uss` |
+| `DevTools/` | `DevPanel`: gammal testpanel, visas bara om GameUI saknas |
 | `Editor/` | Menyn *Vast Space* |
 
 ### För UI-skript
@@ -55,6 +57,7 @@ Prenumerera på `GameEvents` (t.ex. `CurrenciesChanged`, `PlanetChanged`, `Messa
 
 ## Nästa steg
 
-- Riktigt UI: stationskarta, galaxkarta, planetpanel, inventory, balansvy
+- Riktig grafik: sätt sprites på `icon` i material-, planet- och galaxasseten, så används de automatiskt
+- Balansvy (in/ut per material)
 - Market (köp/sälj med varierande priser), Research, Missions, Achievements
 - Energi och personal per planet (knapparna ENERGY/STAFF i mockupen)
