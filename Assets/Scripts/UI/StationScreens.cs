@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 using VastSpace.Data;
+using MaterialDefinition = VastSpace.Data.MaterialDefinition;
 using VastSpace.Util;
 
 namespace VastSpace.UI

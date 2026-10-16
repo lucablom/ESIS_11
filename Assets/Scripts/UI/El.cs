@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.UIElements;
 using VastSpace.Data;
+using MaterialDefinition = VastSpace.Data.MaterialDefinition;
 
 namespace VastSpace.UI
 {

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using VastSpace.Core;
 using VastSpace.Data;
+using MaterialDefinition = VastSpace.Data.MaterialDefinition;
 using VastSpace.State;
 using VastSpace.Systems;
 using VastSpace.Util;

@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using VastSpace.Core;
 using VastSpace.Data;
+using MaterialDefinition = VastSpace.Data.MaterialDefinition;
 using VastSpace.Util;
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem.UI;
