@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a842d041c5745a74aac1ba94c5b63bf9, type: 3}
+  m_Name: forge_iron_rod
+  m_EditorClassIdentifier: Assembly-CSharp::VastSpace.Data.RecipeDefinition
+  id: forge_iron_rod
+  displayName: Forge Iron Rod
+  inputs:
+  - material: {fileID: 11400000, guid: 0d572bd9f7e9577428c0fe2a61b1a2ca, type: 2}
+    amount: 1
+  outputs:
+  - material: {fileID: 11400000, guid: 319fb5bc13fecdb47a3d74eeabde43a0, type: 2}
+    amount: 1
+  durationSeconds: 3

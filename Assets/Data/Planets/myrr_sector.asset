@@ -1,0 +1,160 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa8ecfe70bbbb1b49a057d6f00dd1076, type: 3}
+  m_Name: myrr_sector
+  m_EditorClassIdentifier: Assembly-CSharp::VastSpace.Data.PlanetDefinition
+  id: myrr_sector
+  displayName: Myrr Sector
+  description: Volcanic and unstable, but full of sulfur and magnesium.
+  icon: {fileID: 0}
+  mapPosition: {x: 250, y: 220}
+  exploreCost:
+    currencies:
+    - currency: 0
+      amount: 37500
+    materials:
+    - material: {fileID: 11400000, guid: 24a06422302239045ac35dd19bab5928, type: 2}
+      amount: 1
+  exploreDurationSeconds: 110
+  resources:
+  - material: {fileID: 11400000, guid: be1106c1527432944b1c1b375d346a90, type: 2}
+    weight: 3
+  - material: {fileID: 11400000, guid: 4a101e2d50ad0434084a974c522d3b24, type: 2}
+    weight: 2
+  travelDistance: 800
+  upgrades:
+  - type: 0
+    levels:
+    - value: 30
+      cost:
+        currencies: []
+        materials: []
+    - value: 45
+      cost:
+        currencies:
+        - currency: 0
+          amount: 37500
+        materials: []
+    - value: 65
+      cost:
+        currencies:
+        - currency: 0
+          amount: 90000
+        materials: []
+    - value: 90
+      cost:
+        currencies:
+        - currency: 0
+          amount: 210000
+        materials: []
+    - value: 125
+      cost:
+        currencies:
+        - currency: 0
+          amount: 480000
+        materials: []
+    - value: 170
+      cost:
+        currencies:
+        - currency: 0
+          amount: 1050000
+        materials: []
+  - type: 1
+    levels:
+    - value: 2000
+      cost:
+        currencies: []
+        materials: []
+    - value: 4000
+      cost:
+        currencies:
+        - currency: 0
+          amount: 30000
+        materials: []
+    - value: 8000
+      cost:
+        currencies:
+        - currency: 0
+          amount: 75000
+        materials: []
+    - value: 16000
+      cost:
+        currencies:
+        - currency: 0
+          amount: 180000
+        materials: []
+    - value: 32000
+      cost:
+        currencies:
+        - currency: 0
+          amount: 450000
+        materials: []
+  - type: 2
+    levels:
+    - value: 500
+      cost:
+        currencies: []
+        materials: []
+    - value: 1000
+      cost:
+        currencies:
+        - currency: 0
+          amount: 45000
+        materials: []
+    - value: 2000
+      cost:
+        currencies:
+        - currency: 0
+          amount: 112500
+        materials: []
+    - value: 4000
+      cost:
+        currencies:
+        - currency: 0
+          amount: 270000
+        materials: []
+    - value: 8000
+      cost:
+        currencies:
+        - currency: 0
+          amount: 630000
+        materials: []
+  - type: 3
+    levels:
+    - value: 5
+      cost:
+        currencies: []
+        materials: []
+    - value: 7
+      cost:
+        currencies:
+        - currency: 0
+          amount: 37500
+        materials: []
+    - value: 10
+      cost:
+        currencies:
+        - currency: 0
+          amount: 90000
+        materials: []
+    - value: 14
+      cost:
+        currencies:
+        - currency: 0
+          amount: 225000
+        materials: []
+    - value: 20
+      cost:
+        currencies:
+        - currency: 0
+          amount: 525000
+        materials: []

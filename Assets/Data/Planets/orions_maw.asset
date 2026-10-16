@@ -1,0 +1,160 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa8ecfe70bbbb1b49a057d6f00dd1076, type: 3}
+  m_Name: orions_maw
+  m_EditorClassIdentifier: Assembly-CSharp::VastSpace.Data.PlanetDefinition
+  id: orions_maw
+  displayName: Orions Maw
+  description: A crystal-crusted planet with magnesium and zinc deposits.
+  icon: {fileID: 0}
+  mapPosition: {x: -280, y: -200}
+  exploreCost:
+    currencies:
+    - currency: 0
+      amount: 40000.00059604645
+    materials:
+    - material: {fileID: 11400000, guid: 24a06422302239045ac35dd19bab5928, type: 2}
+      amount: 1
+  exploreDurationSeconds: 110
+  resources:
+  - material: {fileID: 11400000, guid: 4a101e2d50ad0434084a974c522d3b24, type: 2}
+    weight: 2
+  - material: {fileID: 11400000, guid: 12d885a7bd7b1bd459a32d150bce849b, type: 2}
+    weight: 2
+  travelDistance: 700
+  upgrades:
+  - type: 0
+    levels:
+    - value: 30
+      cost:
+        currencies: []
+        materials: []
+    - value: 45
+      cost:
+        currencies:
+        - currency: 0
+          amount: 40000.00059604645
+        materials: []
+    - value: 65
+      cost:
+        currencies:
+        - currency: 0
+          amount: 96000.00143051147
+        materials: []
+    - value: 90
+      cost:
+        currencies:
+        - currency: 0
+          amount: 224000.0033378601
+        materials: []
+    - value: 125
+      cost:
+        currencies:
+        - currency: 0
+          amount: 512000.00762939453
+        materials: []
+    - value: 170
+      cost:
+        currencies:
+        - currency: 0
+          amount: 1120000.0166893005
+        materials: []
+  - type: 1
+    levels:
+    - value: 2000
+      cost:
+        currencies: []
+        materials: []
+    - value: 4000
+      cost:
+        currencies:
+        - currency: 0
+          amount: 32000.00047683716
+        materials: []
+    - value: 8000
+      cost:
+        currencies:
+        - currency: 0
+          amount: 80000.0011920929
+        materials: []
+    - value: 16000
+      cost:
+        currencies:
+        - currency: 0
+          amount: 192000.00286102295
+        materials: []
+    - value: 32000
+      cost:
+        currencies:
+        - currency: 0
+          amount: 480000.0071525574
+        materials: []
+  - type: 2
+    levels:
+    - value: 500
+      cost:
+        currencies: []
+        materials: []
+    - value: 1000
+      cost:
+        currencies:
+        - currency: 0
+          amount: 48000.00071525574
+        materials: []
+    - value: 2000
+      cost:
+        currencies:
+        - currency: 0
+          amount: 120000.00178813934
+        materials: []
+    - value: 4000
+      cost:
+        currencies:
+        - currency: 0
+          amount: 288000.0042915344
+        materials: []
+    - value: 8000
+      cost:
+        currencies:
+        - currency: 0
+          amount: 672000.0100135803
+        materials: []
+  - type: 3
+    levels:
+    - value: 5
+      cost:
+        currencies: []
+        materials: []
+    - value: 7
+      cost:
+        currencies:
+        - currency: 0
+          amount: 40000.00059604645
+        materials: []
+    - value: 10
+      cost:
+        currencies:
+        - currency: 0
+          amount: 96000.00143051147
+        materials: []
+    - value: 14
+      cost:
+        currencies:
+        - currency: 0
+          amount: 240000.0035762787
+        materials: []
+    - value: 20
+      cost:
+        currencies:
+        - currency: 0
+          amount: 560000.0083446503
+        materials: []
